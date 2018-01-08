@@ -25,7 +25,18 @@ echo "==========================================="
 echo "Setting up your mac using douglasroeder/setupmac"
 echo "==========================================="
 
+echo "==========================================="
+echo "Installing homebrew and basic libraries"
+echo "==========================================="
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew install openssl
+brew install libyaml
+
+echo "==========================================="
+echo "Installing pip, ansible and dependencies"
+echo "==========================================="
 sudo easy_install pip
+env LDFLAGS="-L$(brew --prefix openssl)/lib" CFLAGS="-I$(brew --prefix openssl)/include" sudo pip install cryptography
 sudo easy_install ansible
 
 installdir="/tmp/setupmac-$RANDOM"
