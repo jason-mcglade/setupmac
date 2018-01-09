@@ -45,7 +45,6 @@ cask_applications:
   - spotify
   - sublime-text
   - spectacle
-  - karabiner
 
 cask_fonts:
   - font-inconsolata
