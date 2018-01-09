@@ -23,3 +23,7 @@
   homebrew_tap:
     tap: "neovim/homebrew-neovim"
     state: present
+
+- name: tap homebrew caskroom/fonts
+  homebrew_tap:
+    tap: "caskroom/fonts"
