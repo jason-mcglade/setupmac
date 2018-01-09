@@ -50,6 +50,9 @@ cask_fonts:
   - font-fira-mono-for-powerline
   - font-source-code-pro
   - font-source-code-pro-for-powerline
+  - font-fontawesome
+  - font-materialdesignicons-webfont
+  - font-hack
 
 downloads:
    zwift:
