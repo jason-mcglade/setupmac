@@ -44,7 +44,7 @@ values."
      yaml
      csv
      colors
-     themes-megapack
+     ;; themes-megapack
      ruby-on-rails
      go
      ;; (go :variables gofmt-command "goimports")

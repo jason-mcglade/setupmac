@@ -30,6 +30,9 @@ applications:
   - pyenv
   - pyenv-virtualenv
 
+  # dependencies
+  - postgresql
+
 # homebrew cask applications
 cask_applications:
   - google-chrome
