@@ -4,9 +4,9 @@
 - name: spacemacs dot file
   copy:
     src: dotfiles/spacemacs
-    dest: "{{general.local_home}}/.spacemacs"
+    dest: "{{local_home}}/.spacemacs"
 
 - name: tmux dot file
   copy:
     src: dotfiles/tmux.conf
-    dest: "{{general.local_home}}/.tmux.conf"
+    dest: "{{local_home}}/.tmux.conf"

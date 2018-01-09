@@ -1,8 +1,7 @@
 ---
 # list of applications to install
-general:
-  local_home: "{{ lookup('env','HOME') }}"
-  work_dir: "{{ local_home }}/Work"
+local_home: "{{ lookup('env','HOME') }}"
+work_dir: "{{ local_home }}/Work"
 
 # homebrew applications
 applications:
@@ -48,8 +47,8 @@ downloads:
    zwift:
      name: Zwift
      url: http://cdn.zwift.com/app/ZwiftOSX.dmg
-     dest: "{{general.local_home}}/Downloads/ZwiftOSX.dmg"
+     dest: "{{local_home}}/Downloads/ZwiftOSX.dmg"
    suuntolink:
      name: Suunto Movescount link
      url: http://suuntolink.static.movescount.com/Suuntolink_installer.dmg
-     dest: "{{general.local_home}}/Downloads/Suuntolink_installer.dmg"
+     dest: "{{local_home}}/Downloads/Suuntolink_installer.dmg"

@@ -4,30 +4,30 @@
 - name: setting up zsh with oh-my-zsh
   git:
     repo: https://github.com/robbyrussell/oh-my-zsh.git
-    dest: "{{general.local_home}}/.oh-my-zsh"
+    dest: "{{local_home}}/.oh-my-zsh"
 
 - name: getting dracula theme for oh-my-zsh
   git:
     repo: https://github.com/dracula/zsh.git
-    dest: "{{general.local_home}}/.oh-my-zsh_dracula_theme"
+    dest: "{{local_home}}/.oh-my-zsh_dracula_theme"
 
 - name: sym linking oh-my-zsh theme
   file:
-    src: "{{general.local_home}}/.oh-my-zsh_dracula_theme/dracula.zsh-theme"
-    dest: "{{general.local_home}}/.oh-my-zsh/themes/dracula.zsh-theme"
+    src: "{{local_home}}/.oh-my-zsh_dracula_theme/dracula.zsh-theme"
+    dest: "{{local_home}}/.oh-my-zsh/themes/dracula.zsh-theme"
     state: link
 
 - name: setting up emacs with spacemacs
   git:
     repo: https://github.com/syl20bnr/spacemacs
-    dest: "{{general.local_home}}/.emacs.d"
+    dest: "{{local_home}}/.emacs.d"
 
 - name: create work directories
   file:
-    path: "{{general.work_dir}}"
+    path: "{{work_dir}}"
     state: directory
 
 - name: create GOPATH directory
   file:
-    path: "{{general.work_dir}}/go"
+    path: "{{work_dir}}/go"
     state: directory
