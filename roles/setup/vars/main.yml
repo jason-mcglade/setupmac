@@ -44,6 +44,7 @@ cask_applications:
   - virtualbox
   - spotify
   - sublime-text
+  - spectacle
 
 downloads:
    zwift:
