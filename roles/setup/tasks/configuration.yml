@@ -1,6 +1,9 @@
 ---
 # doing configuration
 
+- name: set zsh as default shel
+  command: "chsh -s /bin/zsh"
+
 - name: setting up zsh with oh-my-zsh
   git:
     repo: https://github.com/robbyrussell/oh-my-zsh.git
