@@ -51,6 +51,7 @@ cask_fonts:
   - font-inconsolata-g-for-powerline
   - font-fira-mono
   - font-fira-mono-for-powerline
+  - font-fira-code
   - font-source-code-pro
   - font-source-code-pro-for-powerline
   - font-fontawesome
@@ -58,13 +59,3 @@ cask_fonts:
   - font-hack
   - font-meslo-lg
   - font-meslo-for-powerline
-
-downloads:
-   zwift:
-     name: Zwift
-     url: http://cdn.zwift.com/app/ZwiftOSX.dmg
-     dest: "{{local_home}}/Downloads/ZwiftOSX.dmg"
-   suuntolink:
-     name: Suunto Movescount link
-     url: http://suuntolink.static.movescount.com/Suuntolink_installer.dmg
-     dest: "{{local_home}}/Downloads/Suuntolink_installer.dmg"

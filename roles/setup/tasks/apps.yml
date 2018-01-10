@@ -4,12 +4,6 @@
 - name: application installs
   include_tasks: homebrew.yml
 
-#- name: getting downloads
-#  get_url:
-#    url: "{{item.value.url}}"
-#    dest: "{{item.value.dest}}"
-#  with_dict: "{{downloads}}"
-
 - name: start installing homebrew applications
   homebrew:
     name: "{{item}}"
