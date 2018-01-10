@@ -48,7 +48,7 @@ values."
      ruby-on-rails
      go
      ;; (go :variables gofmt-command "goimports")
-     extra-langs
+     ;; extra-langs
      editorconfig
      restclient
      (python :variables
@@ -92,9 +92,8 @@ values."
    dotspacemacs-scratch-mode 'text-mode
    dotspacemacs-themes '(doom-one spacemacs-dark spacemacs-light)
    dotspacemacs-colorize-cursor-according-to-state t
-   dotspacemacs-default-font '("Hack"
+   dotspacemacs-default-font '("Fira Mono"
                                :size 14
-                               :height 16
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
