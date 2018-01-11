@@ -103,5 +103,4 @@ alias ggpush='git push origin $(git_current_branch)'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-eval "$(rbenv init -)"
-eval "$(pyenv init -)"
+source $HOME/.zshenv

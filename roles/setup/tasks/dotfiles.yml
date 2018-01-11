@@ -11,6 +11,11 @@
     src: dotfiles/tmux.conf
     dest: "{{local_home}}/.tmux.conf"
 
+- name: zshenv dot file
+  copy:
+    src: dotfiles/zshenv
+    dest: "{{local_home}}/.zshenv"
+
 - name: zshrc dot file
   copy:
     src: dotfiles/zshrc

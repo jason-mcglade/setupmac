@@ -1,0 +1,8 @@
+PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/douglasroeder/.rbenv/bin:/usr/local/opt/fzf/bin
+export PATH
+
+# QT 5.5
+export PATH="$(brew --prefix qt@5.5)/bin:$PATH"
+
+eval "$(rbenv init -)"
+eval "$(pyenv init -)"
