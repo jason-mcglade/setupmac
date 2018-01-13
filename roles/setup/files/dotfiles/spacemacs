@@ -92,7 +92,7 @@ values."
    dotspacemacs-scratch-mode 'text-mode
    dotspacemacs-themes '(doom-one spacemacs-dark spacemacs-light)
    dotspacemacs-colorize-cursor-according-to-state t
-   dotspacemacs-default-font '("Fira Mono"
+   dotspacemacs-default-font '("Meslo LG M"
                                :size 14
                                :weight normal
                                :width normal
@@ -181,12 +181,6 @@ values."
 
   ;; Had to add this line to fix global search, apparently Developer branch is working fine
   (spacemacs/set-leader-keys (kbd "/") 'counsel-projectile-ag)
-
-  (with-eval-after-load 'company
-    (add-to-list 'company-backends 'company-elm))
-
-  ;; elm auto-format on save
-  (setq elm-format-on-save t)
 
   ;; dom-theme and solaire
   (when (display-graphic-p)
