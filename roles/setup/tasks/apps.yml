@@ -9,21 +9,9 @@
     name: "{{item}}"
     state: latest
   with_items: "{{applications}}"
-  tags:
-    - applications
 
 - name: start installing homebrew cask applications
   homebrew_cask:
     name: "{{item}}"
     state: installed
   with_items: "{{cask_applications}}"
-  tags:
-    - cask_applications
-
-- name: start installing homebrew cask fonts
-  homebrew_cask:
-    name: "{{item}}"
-    state: installed
-  with_items: "{{cask_fonts}}"
-  tags:
-    - cask_fonts

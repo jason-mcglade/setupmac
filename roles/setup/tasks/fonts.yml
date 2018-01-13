@@ -1,0 +1,8 @@
+---
+# make sure homebrew is installed, update brew and install applications
+
+- name: start installing homebrew cask fonts
+  homebrew_cask:
+    name: "{{item}}"
+    state: installed
+  with_items: "{{cask_fonts}}"
