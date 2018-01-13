@@ -4,5 +4,8 @@ export PATH
 # QT 5.5
 export PATH="$(brew --prefix qt@5.5)/bin:$PATH"
 
+# RBenv
 eval "$(rbenv init -)"
+
+# PyEnv
 eval "$(pyenv init -)"
