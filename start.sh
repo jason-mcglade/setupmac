@@ -22,15 +22,20 @@ if [ $1 == "uninstall" ]; then
 fi
 
 echo "==========================================="
-echo "Setting up your mac using douglasroeder/setupmac"
+echo "Setting up your mac using setupmac"
 echo "==========================================="
+
+echo "==========================================="
+echo "Accept xcode build license"
+echo "==========================================="
+sudo xcodebuild -license accept
 
 echo "==========================================="
 echo "Installing homebrew and basic libraries"
 echo "==========================================="
-# /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-# brew install openssl
-# brew install libyaml
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew install openssl
+brew install libyaml
 
 echo "==========================================="
 echo "Installing pip, ansible and dependencies"

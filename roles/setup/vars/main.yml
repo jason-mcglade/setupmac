@@ -1,15 +1,15 @@
 ---
 # list of applications to install
 local_home: "{{ lookup('env','HOME') }}"
-work_dir: "{{ local_home }}/Work"
+work_dir: "{{ local_home }}/projects"
 
 # homebrew applications
 applications:
   # shell utils
-  - autojump
+  # - autojump
   - zsh
-  - tree
-  - httpie
+  # - tree
+  # - httpie
   - curl
   - wget
   - ctags
@@ -37,28 +37,25 @@ applications:
 # homebrew cask applications
 cask_applications:
   - google-chrome
-  - firefoxdeveloperedition
   - slack
   - iterm2
   - docker
-  - emacs
   - 1password
-  - spotify
-  - sublime-text
-  - spectacle
+  # - sublime-text
+  # - spectacle
 
 cask_fonts:
-  - font-inconsolata
-  - font-inconsolata-g-for-powerline
-  - font-fira-mono
-  - font-fira-mono-for-powerline
-  - font-fira-code
-  - font-source-code-pro
-  - font-source-code-pro-for-powerline
-  - font-fontawesome
-  - font-materialdesignicons-webfont
-  - font-hack
-  - font-meslo-lg
-  - font-meslo-for-powerline
-  - font-dejavusansmono-nerd-font
-  - font-dejavu-sans-mono-for-powerline
+  # - font-inconsolata
+  # - font-inconsolata-g-for-powerline
+  # - font-fira-mono
+  # - font-fira-mono-for-powerline
+  # - font-fira-code
+  # - font-source-code-pro
+  # - font-source-code-pro-for-powerline
+  # - font-fontawesome
+  # - font-materialdesignicons-webfont
+  # - font-hack
+  # - font-meslo-lg
+  # - font-meslo-for-powerline
+  # - font-dejavusansmono-nerd-font
+  # - font-dejavu-sans-mono-for-powerline

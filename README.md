@@ -10,7 +10,7 @@ xcode-select --install
 
 To setup run the following command :
 ```
-curl -s https://raw.githubusercontent.com/douglasroeder/setupmac/master/start.sh | /bin/bash
+curl -s https://raw.githubusercontent.com/jason-mcglade/setupmac/master/start.sh | /bin/bash
 ```
 
 The start.sh script installs `pip` and then `ansible` with pip.
@@ -23,12 +23,11 @@ ansible-playbook -i ./hosts playbook.yml --verbose
 ```
 
 The playbook use homebrew with cask to install most things. You can see a list of
-what get's installed at [here](https://raw.githubusercontent.com/douglasroeder/setupmac/master/roles/setup/vars/main.yml). If you want to change the list of applications, clone
+what get's installed at [here](https://raw.githubusercontent.com/jason-mcglade/setupmac/master/roles/setup/vars/main.yml). If you want to change the list of applications, clone
 this repository, and edit this file, and run the `start.sh` script.
 
 The applications it cannot install through homebrew get's downloaded to
 `$HOME/Downloads`, it's up to you to install them from the Downloads directory.
-
 
 #### Uninstall
 

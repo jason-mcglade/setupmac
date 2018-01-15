@@ -1,7 +1,7 @@
 ---
 # doing configuration
 
-- name: set zsh as default shel
+- name: set zsh as default shell
   command: "chsh -s /bin/zsh"
 
 - name: setting up zsh with oh-my-zsh
@@ -9,28 +9,28 @@
     repo: https://github.com/robbyrussell/oh-my-zsh.git
     dest: "{{local_home}}/.oh-my-zsh"
 
-- name: getting dracula theme for oh-my-zsh
-  git:
-    repo: https://github.com/dracula/zsh.git
-    dest: "{{local_home}}/.oh-my-zsh_dracula_theme"
-
-- name: sym linking oh-my-zsh theme
-  file:
-    src: "{{local_home}}/.oh-my-zsh_dracula_theme/dracula.zsh-theme"
-    dest: "{{local_home}}/.oh-my-zsh/themes/dracula.zsh-theme"
-    state: link
-
-- name: setting up emacs with spacemacs
-  git:
-    repo: https://github.com/syl20bnr/spacemacs
-    dest: "{{local_home}}/.emacs.d"
+# - name: getting dracula theme for oh-my-zsh
+#   git:
+#     repo: https://github.com/dracula/zsh.git
+#     dest: "{{local_home}}/.oh-my-zsh_dracula_theme"
+#
+# - name: sym linking oh-my-zsh theme
+#   file:
+#     src: "{{local_home}}/.oh-my-zsh_dracula_theme/dracula.zsh-theme"
+#     dest: "{{local_home}}/.oh-my-zsh/themes/dracula.zsh-theme"
+#     state: link
+#
+# - name: setting up emacs with spacemacs
+#   git:
+#     repo: https://github.com/syl20bnr/spacemacs
+#     dest: "{{local_home}}/.emacs.d"
 
 - name: create work directories
   file:
     path: "{{work_dir}}"
     state: directory
 
-- name: create GOPATH directory
-  file:
-    path: "{{work_dir}}/go"
-    state: directory
+# - name: create GOPATH directory
+#   file:
+#     path: "{{work_dir}}/go"
+#     state: directory
