@@ -41,8 +41,8 @@ cask_applications:
   - iterm2
   - docker
   - 1password
-  # - sublime-text
-  # - spectacle
+  - spectacle
+  - atom
 
 cask_fonts:
   # - font-inconsolata
