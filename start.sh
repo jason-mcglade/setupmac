@@ -38,8 +38,9 @@ if [[ $? != 0 ]] ; then
     # Install Homebrew
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
-
+echo "*** Installing openssl"
 brew install openssl
+echo "*** Installing libyaml"
 brew install libyaml
 
 echo "==========================================="

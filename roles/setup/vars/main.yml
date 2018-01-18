@@ -45,17 +45,18 @@ cask_applications:
   - atom
 
 cask_fonts:
-  # - font-inconsolata
-  # - font-inconsolata-g-for-powerline
-  # - font-fira-mono
-  # - font-fira-mono-for-powerline
-  # - font-fira-code
-  # - font-source-code-pro
-  # - font-source-code-pro-for-powerline
-  # - font-fontawesome
-  # - font-materialdesignicons-webfont
-  # - font-hack
-  # - font-meslo-lg
-  # - font-meslo-for-powerline
-  # - font-dejavusansmono-nerd-font
-  # - font-dejavu-sans-mono-for-powerline
+  - font-inconsolata
+  - font-inconsolata-g-for-powerline
+  - font-fira-mono
+  - font-fira-mono-for-powerline
+  - font-fira-code
+  - font-source-code-pro
+  - font-source-code-pro-for-powerline
+  - font-sourcecodepro-nerd-font
+  - font-fontawesome
+  - font-materialdesignicons-webfont
+  - font-hack
+  - font-meslo-lg
+  - font-meslo-for-powerline
+  - font-dejavusansmono-nerd-font
+  - font-dejavu-sans-mono-for-powerline
