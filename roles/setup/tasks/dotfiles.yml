@@ -6,6 +6,9 @@
     repo: https://github.com/jason-mcglade/dotfiles
     dest: "{{local_home}}/.dotfiles"
 
+- name: change setup permissions
+  file: dest="{{local_home}}/.dotfiles/setup.sh" mode=+x
+
 - name: setup dot files
   command: "{{local_home}}/.dotfiles/setup.sh"
 
