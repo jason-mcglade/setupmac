@@ -7,5 +7,5 @@
     dest: "{{local_home}}/.dotfiles"
 
 - name: setup dot files
-  command: {{local_home}}/.dotfiles/setup.sh
+  command: "{{local_home}}/.dotfiles/setup.sh"
 
