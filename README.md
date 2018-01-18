@@ -3,11 +3,6 @@
 This is a [Ansible](https://www.ansible.com/) playbook to quickly setup
 a Mac to how I like it.
 
-Before running it just install xcode dependencies:
-```
-xcode-select --install
-```
-
 To setup run the following command :
 ```
 curl -s https://raw.githubusercontent.com/jason-mcglade/setupmac/master/start.sh | /bin/bash

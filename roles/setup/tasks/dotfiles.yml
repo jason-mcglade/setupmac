@@ -1,22 +1,11 @@
 ---
 # getting my dotfile configuration
 
-- name: spacemacs dot file
-  copy:
-    src: dotfiles/spacemacs
-    dest: "{{local_home}}/.spacemacs"
+- name: getting dot files repo
+  git:
+    repo: https://github.com/jason-mcglade/dotfiles
+    dest: "{{local_home}}/.dotfiles"
 
-- name: tmux dot file
-  copy:
-    src: dotfiles/tmux.conf
-    dest: "{{local_home}}/.tmux.conf"
+- name: setup dot files
+  command: {{local_home}}/.dotfiles/setup.sh
 
-- name: zshenv dot file
-  copy:
-    src: dotfiles/zshenv
-    dest: "{{local_home}}/.zshenv"
-
-- name: zshrc dot file
-  copy:
-    src: dotfiles/zshrc
-    dest: "{{local_home}}/.zshrc"
