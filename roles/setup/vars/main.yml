@@ -37,7 +37,6 @@ applications:
 # homebrew cask applications
 cask_applications:
   - google-chrome
-  - google-drive
   - dropbox
   - slack
   - iterm2
