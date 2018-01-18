@@ -33,7 +33,14 @@ sudo xcodebuild -license accept
 echo "==========================================="
 echo "Installing homebrew and basic libraries"
 echo "==========================================="
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+which -s brew
+if [[ $? != 0 ]] ; then
+    # Install Homebrew
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+else
+    brew update
+fi
+
 brew install openssl
 brew install libyaml
 
