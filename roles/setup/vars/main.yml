@@ -6,10 +6,7 @@ work_dir: "{{ local_home }}/projects"
 # homebrew applications
 applications:
   # shell utils
-  # - autojump
   - zsh
-  # - tree
-  # - httpie
   - curl
   - wget
   - ctags
@@ -20,15 +17,17 @@ applications:
   - git-lfs
   - tig
 
-  # editor
-  - vim
-  - neovim
-
   # lang
   - go
   - rbenv
   - pyenv
   - pyenv-virtualenv
+  - python
+  - python3
+
+  # editor
+  - vim
+  - neovim
 
   # dependencies
   - postgresql
@@ -44,6 +43,9 @@ cask_applications:
   - 1password
   - spectacle
   - atom
+  - evernote
+  - postico
+  - skype
 
 cask_fonts:
   - font-inconsolata

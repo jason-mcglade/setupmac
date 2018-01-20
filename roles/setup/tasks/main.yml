@@ -3,6 +3,11 @@
   tags:
     - apps
 
+- name: editors installs
+  include_tasks: editors.yml
+  tags:
+    - editors
+
 - name: font installs
   include_tasks: fonts.yml
   tags:
@@ -17,4 +22,3 @@
   include_tasks: dotfiles.yml
   tags:
     - env
-
