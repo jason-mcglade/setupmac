@@ -33,6 +33,10 @@ applications:
   - postgresql
   - qt@5.5
   - phantomjs
+  - imagemagick
+
+  # environment
+  - awscli
 
 # homebrew cask applications
 cask_applications:
