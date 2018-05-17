@@ -51,6 +51,7 @@ cask_applications:
   - evernote
   - postico
   - skype
+  - java
 
 cask_fonts:
   - font-inconsolata
