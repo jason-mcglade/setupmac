@@ -18,7 +18,7 @@ fi
 }
 
 if [ $1 == "uninstall" ]; then
-    uninstall
+ libyaml   uninstall
 fi
 
 echo "==========================================="
@@ -44,11 +44,17 @@ echo "*** Installing libyaml"
 brew install libyaml
 
 echo "==========================================="
-echo "Installing pip, ansible and dependencies"
+echo "Installing Python3"
 echo "==========================================="
-sudo easy_install pip
-env LDFLAGS="-L$(brew --prefix openssl)/lib" CFLAGS="-I$(brew --prefix openssl)/include" sudo pip install cryptography
-sudo easy_install ansible
+echo "*** Installing python3"
+brew install python
+alias python=/usr/local/bin/python3
+alias python=/usr/local/bin/pip3
+
+echo "==========================================="
+echo "Installing ansible and dependencies"
+echo "==========================================="
+brew install ansible
 
 installdir="/tmp/setupmac-$RANDOM"
 mkdir $installdir

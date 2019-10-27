@@ -31,8 +31,7 @@ applications:
 
   # dependencies
   - postgresql
-  - qt@5.5
-  - phantomjs
+#  - qt@5.5
   - imagemagick
 
   # environment
@@ -40,18 +39,23 @@ applications:
 
 # homebrew cask applications
 cask_applications:
-  - google-chrome
+  - phantomjs
+
   - dropbox
-  - slack
   - iterm2
   - docker
-  - 1password
+
   - spectacle
   - atom
   - evernote
   - postico
   - skype
   - java
+
+# Retired cask applications
+#  - google-chrome
+#  - 1password
+#  - slack
 
 cask_fonts:
   - font-inconsolata
